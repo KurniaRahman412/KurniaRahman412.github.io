@@ -1,0 +1,130 @@
+
+html{
+    background-color: rgb(19, 68, 99);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background-color: lightskyblue;
+    
+}
+.nav   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: black;
+}
+.judul {
+    padding-left:15px ;
+    font-weight: bold;
+    font-size: 18px;
+    animation: gerak 2s 0s infinite;
+}
+
+.nav ul{
+    list-style-type: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+.menu :hover{
+    color: black;
+    background-color: rgb(2, 143, 143);
+    transition: 0.4s;
+    transition-property: inherit;
+}
+@keyframes gerak {
+    0%{ 
+        color: white;
+    }
+    50%{
+        color: rgb(0, 0, 0);
+    } 
+    100% {
+        color: white;
+    }
+}
+/*------------------------------------------------------*/
+.container{
+    height:560px;
+}
+h1, h2 {
+    padding: 0px 20px;
+}
+img {
+    float: left;
+    margin: 8px;
+    width: 300px;
+}
+p {
+    padding: 0px 10px;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+
+/*-------------------------------------------*/
+.footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}
+.footer h5 {
+    font-size: 15px;
+    padding-top: 10px ;
+    margin: 10px;
+}
+.footer a {
+    display: inline-block;
+}
+
+.g {
+    width: 35px;
+    height: 35px;
+    padding: 0px 10px;
+    border-radius: 50%;
+    animation: kedip 1s infinite;
+}
+.g:hover{
+    animation: none;
+}
+
+@keyframes kedip{
+    0%{
+        background-color: white;
+    } 50% {
+        box-shadow: 3px 2px white;
+        background-color: black;
+    } 100% {
+        background-color: white;
+    }
+}
+.kontak {
+    position:fixed ;
+    bottom:20px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.kontak img {
+    float: right;
+    width: 60px;
+    opacity: 40%;
+    transition: .4s;
+}
+.kontak img:hover {
+    width: 70px;
+    transition: 0.1s;
+    opacity: 100%;
+}
