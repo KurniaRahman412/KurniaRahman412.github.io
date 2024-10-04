@@ -7,6 +7,7 @@ body {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 40px;
+  min-width: 390px;
   background-color: rgb(0, 40, 78);
 }
 .nav {
@@ -59,7 +60,7 @@ body {
   margin: 30px 0;
   height: fit-content;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 .container .foto {
   text-align: center;
@@ -67,8 +68,8 @@ body {
 
 .container .foto img {
   margin: 0px 50px;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 50%;
   box-shadow: 0 0 10px 10px rgb(0, 0, 0);
 }
@@ -88,6 +89,7 @@ p {
   padding: 10px;
   text-align: justify;
   margin: 10px;
+  font-size: 12pt;
 }
 
 /*-------------------------------------------*/
@@ -136,11 +138,30 @@ p {
   opacity: 100%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 868px) {
   .container {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
   }
   .container .foto {
     text-align: center;
+  }
+  .container .foto img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 545px) {
+  .nav ul {
+    display: none;
+  }
+  .nav {
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav .judul {
+    padding: 0;
   }
 }
